@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# 1 - api_key
+# 2 - email
+# 3 - password
+curl -XPOST https://intranet.hbtn.io/users/auth_token.json -H "Content-Type: application/json" -d '{"api_key": "$1"", "email": "$2", "password": "$3", "scope": "checker"}'

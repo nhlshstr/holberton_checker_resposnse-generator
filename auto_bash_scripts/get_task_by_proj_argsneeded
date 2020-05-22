@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# $1 is HBTN_TASK_ID, ex: 3936
+# $2 is the auth token
+curl -XGET https://intranet.hbtn.io/tasks/$1.json?auth_token=$2

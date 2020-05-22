@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# $1 is the correction id from running get_correction_result
+# example: 2612670
+# $2: is the auth token
+curl -XGET https://intranet.hbtn.io/correction_requests/$1.json?auth_token=$2 -H "Content-Type: application/json"

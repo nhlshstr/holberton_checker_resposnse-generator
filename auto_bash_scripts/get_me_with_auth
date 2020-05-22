@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# 1 - your auth token
+curl -XGET https://intranet.hbtn.io/users/me.json?auth_token=$1 "Content-Type: application/json"

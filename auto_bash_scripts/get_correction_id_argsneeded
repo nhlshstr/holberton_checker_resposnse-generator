@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# $1 is HBTN_TASK_ID after tasks
+# $2 is your auth token
+curl -POST https://intranet.hbtn.io/tasks/$1/start_correction.json?auth_token=$2 -H "Content-Type: application/json" -d ""

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# $1 is the project id number
+# $2 is your auth token
+# auth token after, changes everytime you run
+curl -XGET https://intranet.hbtn.io/projects/$1.json?auth_token=$2
